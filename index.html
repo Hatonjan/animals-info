@@ -21,10 +21,12 @@
 
     <body>
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-md ">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <h2> Animal Explorer</h2>
-                <a class="navbar-brand" href="#"></a>
+                <a href="index.html">
+                    <img class="logo" src="svg/logo.svg" alt="paw print">
+                    </a>
+                    <h2 class="logo_name"> Animal <br>Explorer</h2>
                 <button 
                     class="navbar-toggler collapse_navbar" 
                     type="button" 
@@ -37,7 +39,7 @@
                 </button>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="colapse navbar-collapse" id="navbarCollapse">
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div id="navigation"></div>
                         </div>
                     </div>
@@ -48,7 +50,12 @@
 
     <div class="container">
         <div id="content_right" class="row text_box col-md-12">
-            <!-- animal detail is rendered here --> 
+            <div class="row home col-md-12"> 
+                <h1>WELCOME TO THE ANIMAL EXPLORER ADVENTURE</h1>
+                <img class="home-image" src="svg/home-image.svg" alt="An sgv image of different animals gathered together">
+                <h2>Choose An Animal To Begin The Adventure</h2>
+                <!-- animal detail is rendered here --> 
+            </div>
         </div>
     </div>
 
@@ -66,31 +73,33 @@
 
         <script id="animal-detail-template" type="text/x-handlebars-template">
             <h1>{{name}}</h1>
-            <img class="animals_image" src="{{image1}}">
-            <img class="animals_image" src="{{image2}}">
+            <img class="animals_image" src="{{image}}"  alt="{{alt}}">
+            <img class="animals_image" src="{{image1}}" alt="{{alt1}}">
             <p class="description">{{description}}</p>
+            <p class="description">{{description1}}</p>
+            <p class="description">{{description2}}</p>
         </script>
 
         <!-- javascript code to fill the template -->
         <script type="text/javascript">
 
             // grab our template code from the DOM
-            var source   = $("#category-template").html();
+            const source   = $("#category-template").html();
 
             // compile the template so we can use it
-            var template = Handlebars.compile(source);
+            const template = Handlebars.compile(source);
 
             // generate HTML from the data
-            var html    = template(animals_data);
+            const html    = template(animals_data);
 
             // add the HTML to the content div
             $('#navigation').html(html);
 
             // this event listener is triggered when the user clicks on an animal name
             $('#navigation').on('click', '.js-animal-name', function(e) {
-                var animal_name = $(e.target).data('id');// pull the data-id attribute, which contains the name
-                console.log('rendering detail page for '+animal_name);
-                for (var i=0;i<animals_data.animals.length;i++) {// look for the animal in the array of animals
+                let animal_name = $(e.target).data('id');// pull the data-id attribute, which contains the name
+                console.log('rendering detail page for '+ animal_name);
+                for (let i = 0; i < animals_data.animals.length; i++) {// look for the animal in the array of animals
                     var an_animal = animals_data.animals[i];
                     if (an_animal.name == animal_name) {// found it!
                         break;
