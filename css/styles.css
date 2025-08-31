@@ -109,6 +109,7 @@ h1 {
     max-width: 800px;
 }
 
+/* Style for the mobile version */
 @media (max-width: 1024px) {
     h1 {
         font-size: 50px;
@@ -130,10 +131,10 @@ h1 {
     }
 
     .nav_bar {
-    /* margin-top: 80PX; */
      position: fixed;
         top: 80px;
         left: 10px;
+        z-index: 1024;
     }
 
     .logo {
@@ -142,6 +143,7 @@ h1 {
         position: fixed;
         top: 20px;
         left: 15px;
+        z-index: 1024;
     }
 
     .logo_name {
