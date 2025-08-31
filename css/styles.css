@@ -124,7 +124,7 @@ h1 {
 @media (max-width: 1024px) {
     /* Adjust the background image for readability */
     body {
-            background-position: 3%;
+        background-position: 3%;
     }
 
     /* hero section */
@@ -133,9 +133,13 @@ h1 {
     }
 
     .home h1 {
+        text-shadow: 0 0 0 ;
         font-size: 40px;
-        color: black;
-        font-weight: bold;
+        font-weight: normal;
+    }
+
+    .home h2{
+        font-size: 20px;
     }
     /* End of hero  */
 
