@@ -67,14 +67,14 @@ to reflect my own design and development approach.
 - [jQuery](https://jquery.com/) – Used for DOM manipulation and dynamic rendering.
 - [Bootswatch Sketchy Theme](https://bootswatch.com/sketchy/) – Applied for visual styling and thematic consistency.
 
-### Design & Assets
-- **Custom Styling**: All styles in `style.css` were created by me to enhance user experience and accessibility.
-- **Logo**: Sourced from [SVGRepo](https://www.svgrepo.com) and adapted for branding.
-- **Hero SVG Illustration**: Created in with Microsoft Copilot.
-
 ### Content & Media
 - **Animal Information and Images** 
 All species descriptions and supporting images were sourced from [Wikipedia](https://www.wikipedia.org), and are used under the 
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://en.wikipedia.org/wiki/Wikipedia:Reusing_Wikipedia_content) 
 and/or the [GNU Free Documentation License](https://en.wikipedia.org/wiki/Wikipedia:Copyrights). Individual image licenses were verified 
 on their respective file description pages.
+
+### Design & Assets
+- **Custom Styling**: All styles in `style.css` were created by me to enhance user experience and accessibility.
+- **Logo**: Sourced from [SVGRepo](https://www.svgrepo.com) and adapted for branding.
+- **Hero SVG Illustration**: Created in with Microsoft Copilot.

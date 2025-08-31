@@ -1,25 +1,29 @@
 body {
     background: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Lowland_rainforest%2C_Masoala_National_Park%2C_Madagascar_%284026784053%29.jpg");
-    background-color: rgba(0, 0, 0);
-    backdrop-filter: blur(1px) brightness(0.75);
-    height: 100%; 
+    background-position: 30%;
 }
 
 /* Hero section */
 .home {
     color: aliceblue;
-    background-color: rgba(255, 255, 0, 0.75);
+    background-color: rgba(255, 255, 0, 0.60);
     border-radius: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0.1%;
+    margin-left: 0.1%;    
 }
 
 .home h2{
     color: black;
     font-size: 30px;
+    font-weight: bold;
+}
+.home h1{
+    color: black;
+    /* font-size: 30px;
+    font-weight: bold; */
 }
 
 .home-image {
@@ -62,7 +66,7 @@ body {
     font-size: 20px;
     position: fixed;
     top: 20px;
-    right: 15px;
+    right: 20px;
     width: 15%;
     z-index: 1024;
 }
@@ -111,15 +115,22 @@ h1 {
 
 /* Style for the mobile version */
 @media (max-width: 1024px) {
+    body {
+            background-position: 3%;
+    }
+
     h1 {
         font-size: 50px;
+        color: black;
+        font-weight: bold;
     }
     
     .text_box {
         margin: 5% 5% 5% 5%;
         border-radius: 25px;
         outline: auto;
-        margin-top: 80px;
+        margin-top: 70px;
+        z-index: 1025;
     }
 
     .description {
