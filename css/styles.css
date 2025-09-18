@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0.1%;    
+    margin: 0.5%;    
 }
 
 .home h2{
@@ -119,6 +119,19 @@ h1 {
     max-width: 800px;
 }
 /* End of description */
+
+
+.footer {
+    background-color: rgba(0, 0, 0, .4);
+    text-shadow: 2px 2px 0 black;
+    color: aliceblue;
+    max-width: 200px;    
+    font-weight: bolder;
+    text-align: center; 
+    margin-top: 50px; 
+    font-size: 20px;
+    border-radius: 10px;
+}
 
 /* Style for the mobile version */
 @media (max-width: 768px) {
