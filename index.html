@@ -69,13 +69,14 @@
     </div>
 
 
-        <!-- this is our template put your code in here...-->
         <script id="category-template" type="text/x-handlebars-template">
             <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
             {{#each animals}}
-                <!-- note that we set the class to js-animal name. This lets us
-                    assign a click event to this li -->
-                <li><a href="#" class="js-animal-name nav_bar" data-id="{{name}}">{{name}}</a></li>
+                <li>
+                    <a href="#" class="js-animal-name nav_bar" data-id="{{name}}">
+                        {{name}}
+                    </a>
+                </li>
             {{/each}}
             </ul>
         </script>
