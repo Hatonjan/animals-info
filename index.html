@@ -33,7 +33,7 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <a href="index.html">
-                    <img class="logo" src="svg/home-image.svg" alt="paw print">
+                    <img class="logo" src="assets/svg/home-image.svg" alt="paw print">
                     </a>
                     <h2 class="logo_name"> Animal <br>Explorer</h2>
                 <button 
@@ -61,7 +61,7 @@
         <div id="content_right" class="row text_box col-md-12">
             <div class="row home col-md-12"> 
                 <h1>ANIMAL EXPLORER</h1>
-                <img class="home-image" src="svg/home-image.svg" alt="An sgv image of different animals gathered together">
+                <img class="home-image" src="assets/svg/home-image.svg" alt="An sgv image of different animals gathered together">
                 <h2>Choose An Animal To Begin Exploring</h2>
                 <!-- animal detail is rendered here --> 
             </div>
@@ -107,17 +107,14 @@
 
             // this event listener is triggered when the user clicks on an animal name
             $('#navigation').on('click', '.js-animal-name', function(e) {
-                let animal_name = $(e.target).data('id');// pull the data-id attribute, which contains the name
+                let animal_name = $(e.target).data('id'); // pull the data-id attribute, which contains the name
                 console.log('rendering detail page for '+ animal_name);
-                for (let i = 0; i < animals_data.animals.length; i++) {// look for the animal in the array of animals
+                for (let i = 0; i < animals_data.animals.length; i++) { // look for the animal in the array of animals
                     var an_animal = animals_data.animals[i];
-                    if (an_animal.name == animal_name) {// found it!
+                    if (an_animal.name == animal_name) { // found it!
                         break;
                     }
                 }
-
-            /* The code below was completed as part of the responsive 
-                web design specialization by Jonathan Scott 8/28/25 */
             
                 // load the html content 
                 const detailSource  = $("#animal-detail-template").html(); 
